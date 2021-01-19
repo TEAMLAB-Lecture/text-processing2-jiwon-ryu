@@ -17,7 +17,7 @@ def digits_to_words(input_string):
 
 
 def to_camel_case(underscore_str):
-    string = underscore_str.strip('_')
+    string = underscore_str.lower().strip('_')
     count_underscore = string.count('_')
     for i in range(count_underscore):
         string = string[:string.find('_')] + string[string.find('_')+1:].capitalize()
